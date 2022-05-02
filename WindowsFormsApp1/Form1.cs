@@ -143,5 +143,22 @@ namespace WindowsFormsApp1
         {
             listBox_onlineList.ClearSelected();
         }
+
+
+
+
+        private void LogOut()
+        {
+            if(button1.Enabled == false)
+            {
+                Send("9" + User);
+                T.Close();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LogOut();
+        }
     }
 }
